@@ -41,13 +41,21 @@ header {
 }
 
 header span {
-    min-width: 49% ; 
+    min-width: 30px ; 
     display: inline-block;
     vertical-align: middle;
+    
 }
 
 span#header-right {
     text-align: right;
+}
+
+#top-menu a {
+     color:#F1F1F1;
+     text-decoration:none;
+     padding-right: 4px;
+     padding-left: 15px;
 }
 
 h1 {
