@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create your ZipTag Account</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+	<body>
+        <header>
+            <span>
+                <img src="images/logo.png" alt="Ziptag Logo" width="120px" />
+            </span>
+            <span id="header-right">
+                <button class="blue">Sign in</button>
+            </span>
+        </header>
+        <h1>Create your Ziptag Account</h1>
+        
+        <div id="content">
+            <span id="left-pane">
+                <h2>Find everything local at one place</h2>
+                <h3>Street Vendors, Cobblers, pani-puri stalls and more..</h3>
+                <img src="images/left_pane.jpg" width="300px" />
+            </span>
+            <span id="right-pane">
+                <form id="signupForm">
+                    <span class="form-label">Name</span><br>
+                    <input type="text" placeholder="First" id="fName" required>
+                    <input type="text" placeholder="Last" id="lName"><br/> 
+                    <div class="error-label" id="err-lbl-fname">You can't leave this empty</div>
+                    
+                    <span class="form-label">Choose your username</span><br/>
+                    
+                    <input type="text" id="username">
+                    <input type="text" id="username-addon" placeholder="@ziptag.in" readonly><br />
+                    <div class="error-label" id="err-lbl-uname">You can't leave this empty</div>
+                    
+                    <span class="form-label">Create a password</span><br/>
+                    <input type="password" id="password"><br/>    
+                    <div class="error-label" id="err-lbl-pass">You can't leave this empty</div>
+                    <span class="form-label">Confirm your password</span><br/>
+                    <input type="password" id="password1"><br/>    
+                    <div class="error-label" id="err-lbl-pass1">You can't leave this empty</div>
+                    
+                    <span class="form-label">Birthday</span><br/>
+                    <input type="text" id = "day" placeholder="Day" maxlength="2" value="" style="width:16%;">
+                    <select style="width:46%;" id="month">
+                        <option value="-1">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <input type="text" placeholder="Year" maxlength="4" max value="" style="width:27%;" id="year"><br>
+                    <div class="error-label" id="err-lbl-date">You can't leave this empty</div>
+                    
+                    <span class="form-label">Gender</span><br/>
+                    <select class="gender" id="gender">
+                      <option value="-1">I am...</option>
+                      <option value="F">Female</option>
+                      <option value="M">Male</option>
+                      <option value="O">Other</option>
+                      <option value="N">Rather not say</option>
+                    </select><br/>
+                    <div class="error-label" id="err-lbl-gender">You can't leave this empty</div>
+                    
+                    <span class="form-label">Mobile phone</span><br/>
+                    <input type="text" id="phone" value=""><br> 
+                    <div class="error-label" id="err-lbl-mobile">You can't leave this empty</div>
+                    
+                    <div style="text-align: right; margin-top: 10px;">
+                        <button class="blue">Sign Up</button>
+                    </div>
+                    
+                </form>
+            </span>
+        </div>
+                
+        <footer>
+            <a href="#">Privacy &amp; Terms</a>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+            <select>
+                 <option value="af">
+                    ‪Afrikaans‬
+                 </option>
+                 <option value="az">
+                   ‪azərbaycan‬
+                 </option>
+                 <option value="ms">
+                   ‪Bahasa Melayu‬
+                 </option>
+                 <option value="ca">
+                   ‪català‬
+                 </option>
+                 <option value="cs">
+                   ‪Čeština‬
+                 </option>
+                 <option value="da">
+                   ‪Dansk‬
+                 </option>
+                 <option value="de">
+                   ‪Deutsch‬
+                 </option>
+                 <option value="et">
+                   ‪eesti‬
+                 </option>
+                 <option value="en-GB">
+                   ‪English (United Kingdom)‬
+                 </option>
+                 <option value="en" selected="selected">
+                   ‪English (United States)‬
+                 </option>
+                 <option value="es">
+                   ‪Español (España)‬
+                 </option>
+                 <option value="es-419">
+                   ‪Español (Latinoamérica)‬
+                 </option>
+                 <option value="eu">
+                   ‪euskara‬
+                 </option>
+                 <option value="fil">
+                   ‪Filipino‬
+                 </option>
+                 <option value="fr-CA">
+                   ‪Français (Canada)‬
+                 </option>
+                 <option value="fr">
+                   ‪Français (France)‬
+                 </option>
+                 <option value="gl">
+                   ‪galego‬
+                 </option>
+                 <option value="hr">
+                   ‪Hrvatski‬
+                 </option>
+                 <option value="in">
+                   ‪Indonesia‬
+                 </option>
+                 <option value="zu">
+                   ‪isiZulu‬
+                 </option>
+                 <option value="is">
+                   ‪íslenska‬
+                 </option>
+                 <option value="it">
+                   ‪Italiano‬
+                 </option>
+                 <option value="sw">
+                   ‪Kiswahili‬
+                 </option>
+                 <option value="lv">
+                   ‪latviešu‬
+                 </option>
+                 <option value="lt">
+                   ‪lietuvių‬
+                 </option>
+                 <option value="hu">
+                   ‪magyar‬
+                 </option>
+                 <option value="nl">
+                   ‪Nederlands‬
+                 </option>
+                 <option value="no">
+                   ‪norsk‬
+                 </option>
+                 <option value="pl">
+                   ‪polski‬
+                 </option>
+                 <option value="pt">
+                   ‪Português (Brasil)‬
+                 </option>
+                 <option value="pt-PT">
+                   ‪Português (Portugal)‬
+                 </option>
+                 <option value="ro">
+                   ‪română‬
+                 </option>
+                 <option value="sk">
+                   ‪Slovenčina‬
+                 </option>
+                 <option value="sl">
+                   ‪slovenščina‬
+                 </option>
+                 <option value="fi">
+                   ‪Suomi‬
+                 </option>
+                 <option value="sv">
+                   ‪Svenska‬
+                 </option>
+                 <option value="vi">
+                   ‪Tiếng Việt‬
+                 </option>
+                 <option value="tr">
+                   ‪Türkçe‬
+                 </option>
+                 <option value="el">
+                   ‪Ελληνικά‬
+                 </option>
+                 <option value="bg">
+                   ‪български‬
+                 </option>
+                 <option value="mn">
+                   ‪монгол‬
+                 </option>
+                 <option value="ru">
+                   ‪Русский‬
+                 </option>
+                 <option value="sr">
+                   ‪српски‬
+                 </option>
+                 <option value="uk">
+                   ‪Українська‬
+                 </option>
+                 <option value="ka">
+                   ‪ქართული‬
+                 </option>
+                 <option value="hy">
+                   ‪հայերեն‬
+                 </option>
+                 <option value="iw">
+                   ‫עברית‬‎
+                 </option>
+                 <option value="ur">
+                   ‫اردو‬‎
+                 </option>
+                 <option value="ar">
+                   ‫العربية‬‎
+                 </option>
+                 <option value="fa">
+                   ‫فارسی‬‎
+                 </option>
+                 <option value="am">
+                   ‪አማርኛ‬
+                 </option>
+                 <option value="ne">
+                   ‪नेपाली‬
+                 </option>
+                 <option value="mr">
+                   ‪मराठी‬
+                 </option>
+                 <option value="hi">
+                   ‪हिन्दी‬
+                 </option>
+                 <option value="bn">
+                   ‪বাংলা‬
+                 </option>
+                 <option value="gu">
+                   ‪ગુજરાતી‬
+                 </option>
+                 <option value="ta">
+                   ‪தமிழ்‬
+                 </option>
+                 <option value="te">
+                   ‪తెలుగు‬
+                 </option>
+                 <option value="kn">
+                   ‪ಕನ್ನಡ‬
+                 </option>
+                 <option value="ml">
+                   ‪മലയാളം‬
+                 </option>
+                 <option value="si">
+                   ‪සිංහල‬
+                 </option>
+                 <option value="th">
+                   ‪ไทย‬
+                 </option>
+                 <option value="lo">
+                   ‪ລາວ‬
+                 </option>
+                 <option value="my">
+                   ‪မြန်မာ‬
+                 </option>
+                 <option value="km">
+                   ‪ខ្មែរ‬
+                 </option>
+                 <option value="ko">
+                   ‪한국어‬
+                 </option>
+                 <option value="zh-HK">
+                   ‪中文（香港）‬
+                 </option>
+                 <option value="ja">
+                   ‪日本語‬
+                 </option>
+                 <option value="zh-CN">
+                   ‪简体中文‬
+                 </option>
+                 <option value="zh-TW">
+                   ‪繁體中文‬
+                 </option>
+            </select>
+        </footer>
+	</body>
+</html>

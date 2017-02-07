@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mahalaxmi Bell &amp; Brass Metal Store</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+	<body>
+      <header>
+            <span>
+                <img src="images/logo.png" alt="Mahalaxmi BnB logo" width="250px" />
+            </span>
+            <span id="header-right">accounting system</span>
+            <div id="top-menu">
+             <!--   <table width="100%">
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Stock</li>
+                                <li>Bill</li>
+                                <li>Reports</li>
+                                <li>Others</li>
+                            </ul>
+                        </td>
+                        <td style="text-align: right;">
+                            Welcome, Biswaranjan &bull; 
+                            <a href="#">Logout</a>
+                        </td>
+                    </tr>
+                </table> -->
+                
+                <!--Welcome, Biswaranjan | Logout-->
+                <a href='#' class='nav-stock' id='nav-link-stock'><span class='nav-line-1'>Shop by</span><span class='nav-line-2'>Category<span class='nav-icon nav-arrow'></span></span></a>
+            </div>
+        </header>
+        
+        <!-- Billing Page -->
+        <div class="page-content">
+            <div class="content-header">Billing Section</div>
+            
+            <div class="content-body">
+                    <!--
+                    <input type="button" value="Add Item" onclick="addItem()" />
+                    <input type="button" value="Remove Item" onclick="removeItem('d1')" /><br>
+                    <input type="text" class ="title-label" value="Item Name" readonly>
+                    <input type="text" class ="title-label" value="Item Type" readonly>
+                    <input type="text" class ="title-label" value="Item Size" readonly>
+                    <input type="text" class ="title-label" value="UNIT" readonly>
+                    <input type="text" class ="title-label" value="Price per unit" readonly>
+                    <input type="text" class ="title-label" value="Total Price" readonly><br>
+-->             <div id="customer-details">
+                    <input type="text" id="customerName" value="" placeholder="Customer Name" class="customer-name">
+                    <input type="text" id="phoneNumber" value="" placeholder="Phone Number" class="phone-number">
+                    <input type="text" id="billingDate" placeholder="Billing Date" class="billing-date" value="06-Feb-2016">
+                    <input type="text" id="billingDate" placeholder="Billing Time" class="billing-time" value="12:50 PM">
+                </div>
+
+                     
+                <div class="item-details">
+                    <select id="product" class="form-elements">
+                            <option value="-1">Select Product</option>
+                            <option value="1">something</option>
+                            <option value="2">anything</option>
+                    </select>   
+
+                    <select id="type" class="form-elements">
+                            <option value="-1">Select Type</option>
+                            <option value="1">Bell</option>
+                            <option value="2">Brass</option>
+                            <option value="2">Bronze</option>
+                            <option value="2">Itron</option>
+                    </select>  
+
+                    <select id="size" class="form-elements">
+                            <option value="-1">Size</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="2">3</option>
+                            <option value="2">4</option>
+                            <option value="2">5</option>
+                    </select>  
+                    <select id="unit" class="form-elements">
+                            <option value="-1">Unit</option>
+                            <option value="1">Piece</option>
+                            <option value="2">KG</option>
+                    </select>
+                    <input type="number" id="quantity" value = "" placeholder="Quantity" class="form-elements">
+                    <input type="number" id="pricepunit" value = "" placeholder="Price / Unit" class="form-elements">
+                    <span class="item-price">Rs 15,00,000.53</span>
+                    <span class="add-remove" class="form-elements">
+                        <img src="images/add.png" /> 
+                        <img src="images/remove.png" />
+                    </span>
+                </div> 
+                <div id="checkout">
+                    <span class="total-price">Total</span>
+                    <input type="text" value="" class="total-price"><br>
+                    <span class="total-discount">Discount</span>
+                    <input type="text" value="" class="total-discount" ><br>
+                    <span class="payble-amount">Amount Payble</span>
+                    <input type="text" value="" class="payble-amount"><br>
+                </div>    
+            </div>
+        </div>
+        
+        
+                
+        <footer>
+            &copy; 2017 Mahalaxmi Brass &amp; Bell Metal Store
+        </footer>
+	</body>
+</html>

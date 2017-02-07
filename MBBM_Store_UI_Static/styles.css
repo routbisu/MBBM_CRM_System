@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", "Calibri", Verdana, sans-serif;
+}
+
+header {
+    background: #F1F1F1;
+    background-color: #498bf4;
+    background: -webkit-linear-gradient(#4d8ffd, #4787ed); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4d8ffd, #4787ed); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4d8ffd, #4787ed); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4d8ffd, #4787ed); /* Standard syntax */
+}
+
+button.blue {
+    background-color: #498bf4;
+    background: -webkit-linear-gradient(#4d8ffd, #4787ed); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4d8ffd, #4787ed); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4d8ffd, #4787ed); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4d8ffd, #4787ed); /* Standard syntax */
+    
+    color: #FFF;
+    border: 1px solid #3079ed;
+    font-size: 80%;
+    padding: 5px 10px 5px 10px;
+    
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    webkit-border-radius: 3px;
+    
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #888;
+}
+
+header {
+    padding: 15px;
+}
+
+header span {
+    min-width: 49% ; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span#header-right {
+    text-align: right;
+}
+
+h1 {
+    font-family: HeaderFont;
+    color: #666;
+    text-align: center;
+    margin-top: 35px;
+}
+
+#content {
+    text-align: center;
+    margin-top: 35px;
+}
+
+#content span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#left-pane {
+    max-width: 350px;
+    text-align: center;
+    margin-right: 45px;
+}
+
+#right-pane {
+    text-align: left;
+    margin-left: 45px;
+    max-width: 350px;
+    background: #F1F1F1;
+    padding: 10px 20px 20px 20px;
+}
+
+
+#left-pane h2 {
+    font-size: 130%;
+    font-weight: normal;
+    color: #666;
+    margin-top: 15px;
+}
+
+#left-pane h3 {
+    font-size: 80%;
+    font-weight: normal;
+    color: #777;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+span.form-label {
+    color: #000;
+    font-weight: 600;
+    font-size: 90%;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+
+#right-pane input[type="text"] {
+    border: 1px solid #C0C0C0;
+    padding: 6px;
+}
+
+#right-pane #fName, #right-pane #lName {
+    width: 45%;
+}
+
+#right-pane #username, #right-pane input[type="text"]#username-addon {
+    font-size: 90%;
+    border: 1px solid #C0C0C0;
+    width: 70px;
+}
+
+#right-pane #username {
+    width: 72%;
+    margin-right: -5px;
+    border-right: none;
+}
+
+#right-pane input[type="text"]#username-addon {
+    border-left: none;
+}
+
+#right-pane input[type="password"], #right-pane #phone,
+#right-pane select {
+    width: 95%;
+    border: 1px solid #C0C0C0;
+    padding: 6px;
+}
+
+#right-pane select.gender {
+    width: 99%;
+}
+
+.error-label {
+    font-size: 75%;
+    color: red;
+    border: none;
+    margin-top: 4px;
+}
+
+footer {
+    border-top: 1px solid #ebebeb;
+    margin-top: 30px;
+    padding: 12px 40px;
+    font-size: 70%;
+}
+
+footer a {
+    margin-right: 10px;
+    color: #888;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #444;
+    text-decoration: underline;
+}
+
+
+
