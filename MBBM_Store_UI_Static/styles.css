@@ -5,14 +5,29 @@
 
 body {
     font-family: "Segoe UI", "Calibri", Verdana, sans-serif;
+    background: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #BBB;
+}
+
+input[type="text"], input[type="number"], select {
+    font-family: "Segoe UI", "Calibri", Verdana, sans-serif;
+    font-size: 80%;
+    color: #555;
+    padding: 3px 6px;
+    border-radius: 3px;
+    border: 1px solid #999;
 }
 
 header {
     background-color: #00213C;
-    background: -webkit-linear-gradient(#232F3E, #203B50); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#232F3E, #203B50); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#232F3E, ##203B50); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right,#00213C, #203B50); /* Standard syntax */
+    background: -webkit-linear-gradient(#232F3E, #294d69); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#232F3E, #294d69); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#232F3E, #294d69); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,#00213C, #294d69); /* Standard syntax */
 }
 
 button.blue {
@@ -36,30 +51,38 @@ button.blue {
 }
 
 header {
-    padding: 15px;
+    padding: 5px;
 }
 
 header span {
-    min-width: 30px ; 
+    min-width: 49%; 
     display: inline-block;
     vertical-align: middle;
-    
 }
 
 span#header-right {
     text-align: right;
+    color: #BBB;
+    text-transform: capitalize;
+}
+
+header ul li {
+    display: inline;
+    font-size: 90%;
+    color: #BBB;
 }
 
 #top-menu {
     padding-left: 10px;
     padding-right: 10px;
-    
+    font-size: 90%;
+    color: #BBB;
 }
-a {
-     color:#F1F1F1; 
-     text-decoration:none;
-     padding-right: 2px;
-     padding-left: 5px;
+
+.page-content {
+    margin: 10px;
+    background: #FFF;
+    border: 1px solid #b3cce1;
 }
 
 .top-display {
@@ -69,103 +92,107 @@ a {
 .content-header {
      background-color:#2A4A61;
      color:#fff; 
-     font-size: 110%;
+     font-size: 90%;
      font-weight:normal;
      text-decoration:none;
-     padding : 5px 8px 8px 10px; 
-    border-color: #0066c0;
-    
+     padding : 5px 10px; 
+     border-color: #0066c0;
 }
 
-h1 {
-    font-family: HeaderFont;
-    color: #666;
-    text-align: center;
-    margin-top: 35px;
+.content-body {
+    min-height: 450px;
+    padding: 10px;
 }
 
-#content {
-    text-align: center;
-    margin-top: 35px;
+.customer-details {
+    margin-bottom: 5px;
 }
 
-#content span {
-    display: inline-block;
-    vertical-align: top;
-}
-
-#left-pane {
-    max-width: 350px;
-    text-align: center;
-    margin-right: 45px;
-}
-
-#right-pane {
-    text-align: left;
-    margin-left: 45px;
-    max-width: 350px;
-    background: #F1F1F1;
-    padding: 10px 20px 20px 20px;
-}
-
-
-#left-pane h2 {
-    font-size: 130%;
-    font-weight: normal;
-    color: #666;
-    margin-top: 15px;
-}
-
-#left-pane h3 {
+.customer-details input {
     font-size: 80%;
-    font-weight: normal;
-    color: #777;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    background: #f4f8fb;
+    padding: 6px 10px;
 }
 
-span.form-label {
-    color: #000;
+.customer-details #customerName {
+    width: 270px;
+}
+
+.customer-details #phoneNumber
+{
+    width: 120px;
+}
+
+.customer-details #billingDate, 
+.customer-details #billingTime 
+{
+    width: 80px;
+}
+
+.item-price {
+    font-size: 75%;
+    display: inline-block;
+    width: 9%;
     font-weight: 600;
+    text-align: right;
+    margin-right: 20px
+}
+
+.form-elements:nth-child(1) { width: 10%; }
+.form-elements:nth-child(2) { width: 20%; }
+.form-elements:nth-child(3) { width: 8%; }
+.form-elements:nth-child(4) { width: 5%; }
+.form-elements:nth-child(5) { width: 5%; }
+.form-elements:nth-child(6) { width: 6%; }
+.form-elements:nth-child(7) { width: 6%; }
+
+.item-details {
+    margin-bottom: 2px;
+}
+
+.item-details  input[type="number"] {
+    padding: 4px;
+}
+
+.add-remove img {    
+    vertical-align: middle;
+}
+
+.dummy {
+    display: inline-block;
+    width: 54%;
+    margin-left: 28px;
+}
+
+.sub-total {
+    display: inline-block;
+    width:7%;
+    text-align: right;
+    font-size: 80%;
+    font-weight: 600;
+}
+
+#checkout {
+    margin-top: 10px;
+    border-top: 1px solid #CCC;
+}
+
+input[type="button"] {
+    background: #52872b url(images/pay.png) no-repeat 10% 30%;    
+    color: #FFF;
+    border: none;
     font-size: 90%;
-    margin-top: 7px;
-    margin-bottom: 3px;
+    padding: 9px 10px 7px 37px;
+    
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    webkit-border-radius: 6px;
+    
+    cursor: pointer;
 }
 
-#right-pane input[type="text"] {
-    border: 1px solid #C0C0C0;
-    padding: 6px;
-}
-
-#right-pane #fName, #right-pane #lName {
-    width: 45%;
-}
-
-#right-pane #username, #right-pane input[type="text"]#username-addon {
-    font-size: 90%;
-    border: 1px solid #C0C0C0;
-    width: 70px;
-}
-
-#right-pane #username {
-    width: 72%;
-    margin-right: -5px;
-    border-right: none;
-}
-
-#right-pane input[type="text"]#username-addon {
-    border-left: none;
-}
-
-#right-pane input[type="password"], #right-pane #phone,
-#right-pane select {
-    width: 95%;
-    border: 1px solid #C0C0C0;
-    padding: 6px;
-}
-
-#right-pane select.gender {
-    width: 99%;
+input[type="button"]:hover {
+    background: #dc173a url(images/pay.png) no-repeat 10% 30%;   
 }
 
 .error-label {
@@ -177,9 +204,10 @@ span.form-label {
 
 footer {
     border-top: 1px solid #ebebeb;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 12px 40px;
     font-size: 70%;
+    background: #FFF;
 }
 
 footer a {
@@ -192,6 +220,8 @@ footer a:hover {
     color: #444;
     text-decoration: underline;
 }
+
+
 
 
 
