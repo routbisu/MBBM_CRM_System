@@ -1,3 +1,4 @@
+/* Styleshit */
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +23,7 @@ input[type="text"], input[type="number"], input[type="password"], select {
     border: 1px solid #CCC;
 }
 
+/* Semantic Element Naming */
 header {
     background-color: #00213C;
     background: -webkit-linear-gradient(#232F3E, #294d69); /* For Safari 5.1 to 6.0 */
@@ -229,7 +231,7 @@ input[type="button"].checkout:hover {
     text-align: center;
     background: #1E425D;
     vertical-align: top;
-    background: -webkit-radical-gradient(#458DC2,#1E425D); /* For Safari 5.1 to 6.0 */
+    background: -webkit-radial-gradient(#458DC2,#1E425D); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#458DC2, #1E425D); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#458DC2, #1E425D); /* For Firefox 3.6 to 15 */
     background: radial-gradient(#458DC2, #1E425D); /* Standard syntax */
