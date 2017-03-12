@@ -1,0 +1,17 @@
+{
+  "name": "MBBM Angular Code",
+  "description": "Angular Code for MBBM",
+  "main": "app.js",
+  "authors": [
+    "Biswaranjan Kanakdeepa"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
