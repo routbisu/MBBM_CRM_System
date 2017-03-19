@@ -1,9 +1,9 @@
 {
-  "name": "MBBM Angular Code",
+  "name": "mbbmangularcode",
   "description": "Angular Code for MBBM",
   "main": "app.js",
   "authors": [
-    "Biswaranjan Kanakdeepa"
+    "Biswaranjan", "Kanakdeepa"
   ],
   "license": "MIT",
   "homepage": "",
@@ -13,5 +13,14 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "angular": "angularjs#^1.6.3"
+  },
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.5.2",
+    "karma": "^0.4.6"
+  }
 }
