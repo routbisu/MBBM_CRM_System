@@ -1,18 +1,9 @@
-var router = express.Router();              // get an instance of the express Router
+var express = require('express');
 
-// middleware to use for all requests
-router.use(function(req, res, next) {
-    // do logging
-    console.log('Something is happening.');
-    next(); // make sure we go to the next routes and don't stop here
-});
-
-router.get('/', function (req, res) {
-    res.json({ message: 'MBBM API is running.' });  
-    next();
-});
-
-router.route('/products')
+var routes = function(Product) {
+    
+    var productRouter = express.Router();
+    productRouter.route('/products')
     
     // Add a new product
     // ============================================================
@@ -43,7 +34,7 @@ router.route('/products')
         });    
     })
 
-router.route('/products/:ProductID')
+productRouter.route('/products/:ProductID')
 
     // Get the product with that id
     // ================================================================
@@ -59,20 +50,23 @@ router.route('/products/:ProductID')
     // ================================================================
 	.put(function(req, res) {
 		Product.findById(req.params.ProductID, function(err, product) {
-
-			if (err)
+            
+            if(product == null) 
+                res.send({ message: 'Product not found for this product ID' });
+            else {
+                if (err)
 				res.send(err);
 
-			product.ProductName = req.body.ProductName;  
-            product.ProductPrice = req.body.ProductPrice;
-            
-			product.save(function(err) {
-				if (err)
-					res.send(err);
+                product.ProductName = req.body.ProductName;  
+                product.ProductPrice = req.body.ProductPrice;
 
-				res.json({ message: 'Product updated!' });
-			});
+                product.save(function(err) {
+                    if (err)
+                        res.send(err);
 
+                    res.json({ message: 'Product updated!' });
+                });
+            }
 		});
 	})
 
@@ -88,3 +82,8 @@ router.route('/products/:ProductID')
 			res.json({ message: 'Product deleted' });
 		});
 	});
+    
+    return productRouter;
+};
+
+module.exports = routes;
