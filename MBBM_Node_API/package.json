@@ -1,0 +1,19 @@
+{
+  "name": "mbbmnodeapi",
+  "version": "1.0.0",
+  "description": "Express REST API for MBBM Store Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/routbisu/MBBM_CRM_System.git"
+  },
+  "author": "Biswaranjan Rout",
+  "license": "ISC",
+  "homepage": "https://github.com/routbisu/MBBM_CRM_System#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
