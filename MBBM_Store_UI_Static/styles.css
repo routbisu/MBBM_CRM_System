@@ -163,6 +163,7 @@ header ul li {
     margin-right: 20px
 }
 
+/*
 .form-elements:nth-child(1) { width: 10%; }
 .form-elements:nth-child(2) { width: 20%; }
 .form-elements:nth-child(3) { width: 8%; }
@@ -170,6 +171,7 @@ header ul li {
 .form-elements:nth-child(5) { width: 5%; }
 .form-elements:nth-child(6) { width: 6%; }
 .form-elements:nth-child(7) { width: 6%; }
+*/
 
 .item-details {
     margin-bottom: 2px;
