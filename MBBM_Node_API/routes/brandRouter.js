@@ -3,14 +3,14 @@ var express = require('express');
 var routes = function(Brand) {
     
     var brandRouter = express.Router();
+
     brandRouter.route('/brands')
 
+    // Create a new brand
     .post(function(req, res) {
     
-        var brand = new Brand();   
+        var brand = new Brand();  
         
-        console.log(req);
-    
         // Params comes from request body
         brand.BrandName = req.body.BrandName;  
 
@@ -25,8 +25,9 @@ var routes = function(Brand) {
         });
     })
 
-    .get(function (req, res) { 
-        Brand.find(function(err, brands) {
+    // Get all brands or filtered based on query string
+    .get(function (req, res) {
+        Brand.find(req.query, function(err, brands) {
             if(err) {
                 res.status(500).send(err);
             }
@@ -35,6 +36,12 @@ var routes = function(Brand) {
             }
         });
     });
+
+    brandRouter.route('/brands/:BrandID')
+
+    .get(function(req, res) {
+        
+    })
     
     return brandRouter;
 }

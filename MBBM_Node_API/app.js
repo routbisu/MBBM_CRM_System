@@ -35,14 +35,6 @@ var brandRouter = require('./routes/brandRouter')(Brand);
 // All of the routes will be prefixed with /api
 app.use('/api', brandRouter);
 
-// Middleware to use for all requests
-/*brandRouter.use(function(req, res, next) {
-    // do logging
-    console.log('Something is happening.');
-    next(); // make sure we go to the next routes and don't stop here
-});*/
-
-
 app.get('/', function(req, res) {
     res.json({ "Status": "MBBM API is running at port: " + port });
 });
