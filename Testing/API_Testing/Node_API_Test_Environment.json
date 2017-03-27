@@ -1,0 +1,16 @@
+{
+  "id": "40e2a866-d5da-1a9d-9e37-95466cd082eb",
+  "name": "MBBM_Env",
+  "values": [
+    {
+      "enabled": true,
+      "key": "url",
+      "value": "http://localhost:3000",
+      "type": "text"
+    }
+  ],
+  "timestamp": 1490625710384,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2017-03-27T18:30:14.144Z",
+  "_postman_exported_using": "Postman/4.10.4"
+}

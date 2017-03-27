@@ -1,3 +1,4 @@
+// =============================================================================
 // BASE SETUP
 // =============================================================================
 // Mongo DB Details
@@ -19,6 +20,8 @@ mongoose.connect('mongodb://admin:password@ds137110.mlab.com:37110/mbbm');
 
 // Models
 var Brand = require('./models/brand');
+var Product = require('./models/product');
+
 
 // Configure bodyParser()
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -29,11 +32,12 @@ var port = process.env.PORT || 3000;
 // ROUTES FOR OUR API
 // =============================================================================
 var brandRouter = require('./routes/brandRouter')(Brand);
-
+var productRouter = require('./routes/productRouter')(Product, Brand);
 
 // REGISTER ROUTES -------------------------------
 // All of the routes will be prefixed with /api
 app.use('/api', brandRouter);
+app.use('/api', productRouter);
 
 app.get('/', function(req, res) {
     res.json({ "Status": "MBBM API is running at port: " + port });
