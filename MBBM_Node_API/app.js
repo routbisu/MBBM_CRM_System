@@ -1,3 +1,7 @@
+/**
+ * app.js -> Entry point for the MBBM_Node_APIs and the servee
+ */
+
 // BASE SETUP
 // =============================================================================
 // Mongo DB Details
