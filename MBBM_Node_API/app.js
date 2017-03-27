@@ -1,5 +1,5 @@
 /**
- * app.js -> Entry point for the MBBM_Node_APIs and the servee
+ * app.js -> Entry point for the MBBM_Node_APIs and the server
  */
 
 // BASE SETUP

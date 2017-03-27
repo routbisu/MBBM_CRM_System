@@ -1,6 +1,6 @@
-"use strict";
-
 $(document).ready(function() {
+    "use strict";
+    
     $(".error-label").hide();
     
     // First Name Validation    
