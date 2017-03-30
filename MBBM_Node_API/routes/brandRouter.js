@@ -45,9 +45,9 @@ var routes = function(Brand) {
 
     .get(function(req, res) {
         
-    })
+    });
     
     return brandRouter;
-}
+};
 
 module.exports = routes;
