@@ -1,0 +1,153 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MBBM_API",
+		"_postman_id": "13e8c8ff-9a3a-fd2b-4625-7d208b835fa1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Brands_Get_All",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"var data = JSON.parse(responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{url}}/api/brands/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\tBra\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Brands_Put",
+			"request": {
+				"url": "{{url}}/api/brands/68d90d4e5fb469334061d1db",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"BrandName\": \"Agarwal\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Brands_Delete",
+			"request": {
+				"url": "{{url}}/api/brands/58d7da00910cabd7408a0591",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Product_Get_All",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"var data = JSON.parse(responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{url}}/api/products",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\tBra\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Product_POST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"var data = JSON.parse(responseBody);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{url}}/api/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"BrandID\": \"58d90d4e5fb469334061d1db\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
