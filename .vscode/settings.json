@@ -1,0 +1,10 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "jshint.options": {
+        // for recognizing browser document object
+        "browser": true,
+
+        // for recognizing jquery object
+        "jquery": true,
+    }
+}

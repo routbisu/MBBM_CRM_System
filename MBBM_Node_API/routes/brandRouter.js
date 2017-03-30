@@ -1,3 +1,7 @@
+/**
+ * brandRouter.js -> API router for adding, deleting, modifying and retrieving any product's brand
+ */
+
 var express = require('express');
 
 var routes = function(Brand) {
@@ -99,6 +103,6 @@ var routes = function(Brand) {
     });
 
     return brandRouter;
-}
+};
 
 module.exports = routes;

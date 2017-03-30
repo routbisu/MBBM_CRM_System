@@ -1,3 +1,7 @@
+/**
+ * brand.js -> Mongoose schema for "Brands" table
+ */
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
