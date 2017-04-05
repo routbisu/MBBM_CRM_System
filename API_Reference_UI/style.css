@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12px;
+}
+
+#container {
+    width: 99%;
+}
+
+.left-nav {
+    position: fixed;
+    width: 250px;
+    height: 97vh;
+    left: 0px;
+    background: #117499;
+    overflow-y: scroll;
+    padding: 10px;
+    color: #FFF;
+}
+
+.page-content {
+    padding: 15px;
+    padding-left: 290px;
+}
+
+.libary-menu {
+    border: 1px solid #FFF;
+    padding: 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    webkit-border-radius: 4px;
+}
