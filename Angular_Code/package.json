@@ -2,13 +2,15 @@
   "name": "mbbmangularcode",
   "version": "1.0.0",
   "description": "MBBM Angular Code",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server -a localhost -p 5000"
   },
   "author": "Biswaranjan Rout",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
     "jasmine": "^2.5.3"
   }
 }

@@ -3,3 +3,4 @@ bower_components
 node_modules
 app/js
 assets/lib
+npm-debug.log
