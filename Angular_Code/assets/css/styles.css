@@ -1,0 +1,336 @@
+/* Styleshit */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", "Calibri", Verdana, sans-serif;
+    background: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #BBB;
+}
+
+input[type="text"], input[type="number"], input[type="password"], select {
+    font-family: "Segoe UI", "Calibri", Verdana, sans-serif;
+    font-size: 80%;
+    color: #333;
+    padding: 3px 6px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+}
+
+/* Semantic Element Naming */
+header {
+    background-color: #00213C;
+    background: -webkit-linear-gradient(#232F3E, #294d69); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#232F3E, #294d69); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#232F3E, #294d69); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,#00213C, #294d69); /* Standard syntax */
+}
+
+button.blue {
+    background-color: #0066c0;
+    background: -webkit-linear-gradient(#4d8ffd, #0066c0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4d8ffd, #0066c0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4d8ffd, #0066c0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4d8ffd, #0066c0); /* Standard syntax */
+    
+    color: #FFF;
+    border: 1px solid #3079ed;
+    font-size: 80%;
+    padding: 5px 10px 5px 10px;
+    
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    webkit-border-radius: 3px;
+    
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #888;
+}
+
+
+
+header {
+    padding: 5px;
+}
+
+header span {
+    min-width: 49%; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span#header-right {
+    text-align: right;
+    color: #BBB;
+    text-transform: capitalize;
+}
+
+header ul li {
+    display: inline;
+    font-size: 90%;
+    color: #BBB;
+    padding-right: 15px;
+    background: url(images/down-arrow.png) no-repeat right 67%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.user-login {
+    font-size: 90%;
+}
+
+#top-menu {
+    padding-left: 15px;
+    padding-right: 20px;
+    font-size: 90%;
+    color: #BBB;
+}
+
+.page-content {
+    margin: 10px;
+    background: #FFF;
+    border: 1px solid #b3cce1;
+}
+
+.top-display {
+    margin-left: 5px;
+}
+
+.content-header {
+     background-color:#2A4A61;
+     color:#fff; 
+     font-size: 90%;
+     font-weight:normal;
+     text-decoration:none;
+     padding : 5px 10px; 
+     border-color: #0066c0;
+}
+
+.content-body {
+    min-height: 450px;
+    padding: 10px;
+    border: 1px solid 
+}
+
+.customer-details {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 10px;
+}
+
+
+.customer-details input[type="button"] {
+    padding: 8px 30px 8px 10px;
+    border-radius: 4px;
+    border: none;
+    background: #52872b url(images/right-arrow.png) no-repeat 90%;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.customer-details input {
+    font-size: 80%;
+    background: #f4f8fb;
+    padding: 6px 10px;
+}
+
+.customer-details #customerName {
+    width: 270px;
+}
+
+.customer-details #phoneNumber
+{
+    width: 120px;
+}
+
+.customer-details #billingDate, 
+.customer-details #billingTime 
+{
+    width: 80px;
+}
+
+.item-price {
+    font-size: 75%;
+    display: inline-block;
+    width: 9%;
+    font-weight: 600;
+    text-align: right;
+    margin-right: 20px
+}
+
+/*
+.form-elements:nth-child(1) { width: 10%; }
+.form-elements:nth-child(2) { width: 20%; }
+.form-elements:nth-child(3) { width: 8%; }
+.form-elements:nth-child(4) { width: 5%; }
+.form-elements:nth-child(5) { width: 5%; }
+.form-elements:nth-child(6) { width: 6%; }
+.form-elements:nth-child(7) { width: 6%; }
+*/
+
+.item-details {
+    margin-bottom: 2px;
+}
+
+.item-details  input[type="number"] {
+    padding: 4px;
+}
+
+.add-remove img {    
+    vertical-align: middle;
+}
+
+.dummy {
+    display: inline-block;
+    width: 54%;
+    margin-left: 28px;
+}
+
+.sub-total {
+    display: inline-block;
+    width:7%;
+    text-align: right;
+    font-size: 80%;
+    font-weight: 600;
+}
+
+#checkout {
+    margin-top: 10px;
+    border-top: 1px solid #D9D9D9;
+}
+
+input[type="button"].checkout {
+    background: #52872b url(images/pay.png) no-repeat 10% 30%;    
+    color: #FFF;
+    border: none;
+    font-size: 90%;
+    padding: 9px 10px 7px 37px;
+    
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    webkit-border-radius: 6px;
+    
+    cursor: pointer;
+}
+
+input[type="button"].checkout:hover {
+    background: #dc173a url(images/pay.png) no-repeat 10% 30%;   
+}
+
+.error-label {
+    font-size: 65%;
+    color: #F5F5F5;
+    border: none;
+    margin-top: 4px;
+}
+
+#sign-page {
+    text-align: center;
+    background: #1E425D;
+    vertical-align: top;
+    background: -webkit-radial-gradient(#458DC2,#1E425D); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#458DC2, #1E425D); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#458DC2, #1E425D); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#458DC2, #1E425D); /* Standard syntax */
+}
+
+#sign-content {
+    margin-top: 200px;  
+}
+
+#sign-content span,button {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600;
+    font-size: 130%;
+}
+
+
+#left-pane {
+    max-width: 350px;
+    margin:5px;
+    padding-top: 70px;
+    
+}
+
+#right-pane {
+    text-align: left;
+    max-width: 350px;
+    border-left: 1px solid #A4A4FF;
+    margin: 5px;
+    padding: 5px 20px 20px 20px;
+  
+}
+
+#sign-in {
+    color: aqua;
+    margin-bottom: 10px;
+    
+}
+#fName , #password {
+    width: 250px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+button#sign-button {
+    background-color: aqua;
+    color: #004F9D;
+    font-size: 85%;
+    
+    width: 263px;
+    height: 40px;
+    
+    border-radius: 5px;
+    -moz-border-radius: 3px;
+    webkit-border-radius: 3px;
+    
+    cursor: pointer;
+    
+}
+#err-lbl-fname, #err-lbl-pass{
+    margin-bottom: 9px;
+}
+
+#pass-reset {
+    text-align: right;
+    text-decoration: underline;
+    cursor:pointer;
+    color: #CCCCFF;
+    font-size: 65%;
+    padding: 20px 0px 20px 20px;
+    
+}
+
+footer {
+    border-top: 1px solid #ebebeb;
+    margin-top: 10px;
+    padding: 12px 40px;
+    font-size: 70%;
+    background: #FFF;
+}
+
+footer a {
+    margin-right: 10px;
+    color: #888;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #444;
+    text-decoration: underline;
+}
+
+#sign-footer {
+    margin-top: 300px;
+    width: 99%;
+}
+
+
+
+

@@ -12,5 +12,8 @@
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
     "jasmine": "^2.5.3"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
   }
 }

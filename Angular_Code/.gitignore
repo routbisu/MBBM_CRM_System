@@ -1,6 +1,9 @@
-#Bower Components
+##############################
+# Ignore Bower & Node Modules
+##############################
 bower_components
 node_modules
-app/js
 assets/lib
+
+# NPM Debug Log
 npm-debug.log

@@ -29,6 +29,15 @@ var Product = require('./models/product');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// CORS Allow
+// app.use(function(req, res, next) {
+//   res.setHeader('Access-Control-Allow-Origin', '*');
+//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
+//   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, content-type, Authorization');
+//   next();
+// });
+
+
 var port = process.env.PORT || 3000;
 
 // ROUTES FOR OUR API
