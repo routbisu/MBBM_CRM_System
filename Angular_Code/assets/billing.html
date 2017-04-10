@@ -1,0 +1,97 @@
+<!-- Billing Page -->
+<div class="page-content">
+    <div class="content-header">Billing Section</div>
+        <div class="content-body">
+            <div class="customer-details">
+                <input type="text" id="customerName" value="" placeholder="Customer Name" class="customer-name">
+                <input type="text" id="phoneNumber" value="" placeholder="Phone Number" class="phone-number">
+                <input type="text" id="billingDate" placeholder="Billing Date" class="billing-date" value="06-Feb-2016">
+                <input type="text" id="billingTime" placeholder="Billing Time" class="billing-time" value="12:50 PM">
+                <input type="button" id="next" value="Next" />
+            </div>
+
+            <div class="item-details" ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
+            {{ i }}
+            <select id="product" class="form-elements">
+                <option value="1">Buy</option>
+                <option value="2">Sell</option>
+            </select>
+
+            <select id="product" class="form-elements">
+                <option value="-1">Select Brand</option>
+                <option value="1">GA</option>
+                <option value="2">BI</option>
+            </select>
+
+            <select id="product" class="form-elements">
+                <option value="-1">Select Product</option>
+                <option value="1">Gola</option>
+                <option value="2">anything</option>
+            </select>
+
+            <select id="product" class="form-elements">
+                <option value="1">Finished</option>
+                <option value="2">Raw Mat.</option>
+            </select>
+
+            <select id="type" class="form-elements">
+                <option value="-1">Select Type</option>
+                <option value="1">Bell</option>
+                <option value="2">Brass</option>
+                <option value="2">Bronze</option>
+                <option value="2">Itron</option>
+            </select>
+
+            <select id="size" class="form-elements">
+                <option value="-1">Size</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2">3</option>
+                <option value="2">4</option>
+                <option value="2">5</option>
+            </select>
+            <input type="number" id="Pieces" value="0" placeholder="Pieces" class="form-elements" ng-model="pieces">
+            <input type="number" id="KG" value="0" placeholder="KG" class="form-elements" ng-model="kg">
+            <input type="number" id="pricepunit" value="0" placeholder="Price / Unit" class="form-elements" ng-model="price">
+            <select id="billingunit" class="form-elements" ng-model="billingunit">
+                <option value="1">per Piece</option>
+                <option value="2">per KG</option>
+            </select>
+            <span class="item-price">Rs {{ billingunit === 1 ? pieces * price : kg * price }}</span>
+            <span class="add-remove" class="form-elements">
+                <img src="images/add.png" /> 
+                <img src="images/remove.png" />
+            </span>
+        </div>
+
+        <div id="checkout">
+            <span class="dummy"></span>
+            <span class="sub-total">Sub Total</span>
+            <span class="item-price">Rs 2,00,000.53</span>
+
+            <div style="margin-top: 3px; padding-bottom: 3px; border-bottom: 1px solid #CCC">
+                <span class="dummy"></span>
+                <span class="sub-total">Discount</span>
+                <span class="item-price">
+                    <input type="text" id="quantity" value = "" placeholder="Discount" class="form-elements" 
+                    style="width: 80%; font-size: 110%; text-align: right; margin-right: -5px;">
+                </span>
+            </div>
+
+            <span class="dummy"></span>
+            <span class="grand-total">Grand Total</span>
+            <span class="item-price">Rs 2,00,000.53</span>
+            <input type="button" id="checkout" class="checkout" value="Checkout" />
+            <br />
+
+            <!--
+            <span class="total-price">Total</span>
+            <input type="text" value="" class="total-price"><br>
+            <span class="total-discount">Discount</span>
+            <input type="text" value="" class="total-discount" ><br>
+            <span class="payble-amount">Amount Payble</span>
+            <input type="text" value="" class="payble-amount"><br>
+            -->
+        </div>
+    </div>
+</div>

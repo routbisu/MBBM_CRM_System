@@ -1,27 +1,22 @@
 {
-  "name": "mbbmangularcode",
-  "description": "Angular Code for MBBM",
-  "main": "app.js",
+  "name": "mbbmui",
+  "description": "Frontend for MBBM CRM System",
+  "main": "index.html",
   "authors": [
-    "Biswaranjan",
-    "Kanakdeepa"
+    "Biswaranjan Rout"
   ],
-  "license": "MIT",
+  "license": "ISC",
   "homepage": "",
   "ignore": [
-    "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
   ],
   "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^0.4.2",
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.1",
-    "angular": "angularjs#^1.6.3",
-    "angular-ui-router": "^0.4.2"
-  },
-  "devDependencies": {
-    
+    "jquery": "^3.2.1"
   }
 }
