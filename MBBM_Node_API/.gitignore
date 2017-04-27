@@ -1,3 +1,4 @@
-#Git ignore Node Modules
+#Git ignore
 node_modules
 issues
+jsdoc
