@@ -6,5 +6,8 @@
 
         // for recognizing jquery object
         "jquery": true,
+
+        // esversion
+        "esversion": 6
     }
 }
